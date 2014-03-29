@@ -1,0 +1,233 @@
+@import compass/css3
+
+$default-text-shadow-color: rgba(white, 1)
+$default-text-shadow-blur: 1px
+$default-text-shadow-v-offset: 1px
+$default-text-shadow-h-offset: 1px
+
+$img: /theme/Olia/img
+
+body
+	background-color: black
+	font-family: Calibri, Arial, sans-serif
+	color: white
+	font-size: 15px
+
+a,
+a:hover
+	text-decoration: none
+
+p
+	line-height: 130%
+
+h1,
+h2,
+h3,
+h4
+	font-weight: normal
+	margin: 0
+	line-height: 100%
+	text-transform: uppercase
+
+h2
+	font-size: 30px
+	color: #ec068d
+h3
+	font-size: 18px
+
+.purple
+	color: #ec068d
+
+.features
+	// margin-top: 80px
+	margin-bottom: 30px
+	p
+		width: 210px
+
+.info
+	img
+		margin-bottom: 30px
+	h2
+		font-size: 36px
+	h3
+		font-size: 24px
+	h4
+		margin: 20px 0
+
+.technology
+	.info
+		.col1
+			padding-top: 25px
+			p
+				font-size: 18px
+				line-height: 110%
+		.col2
+			margin-bottom: 30px
+			h3
+				border-bottom: 2px solid #fddd28
+				margin: 25px 0 5px
+				padding-bottom: 5px
+			ul
+				margin: 0
+				list-style-position: inside
+			p,
+			li
+				font-size: 15px
+			p
+				margin-bottom: 15px
+
+.mainpage
+	.info
+		margin-top: 50px
+
+.info
+	h1
+		font-size: 42px
+		@include single-text-shadow
+
+.slideshow
+	position: absolute
+
+.mainpage
+	// background: black url(/bg_main.jpg) no-repeat center bottom
+	background: black url(#{$img}/flares2.jpg) no-repeat center top
+
+.technology
+	background: black url(#{$img}/bg_tech.jpg) no-repeat center top
+
+.shade
+	background: black url(#{$img}/flares2.jpg) no-repeat center top
+
+.review
+	background: black url(#{$img}/bg_reviews.jpg) no-repeat center top
+
+ul.top_menu
+	margin: 0
+	padding-top: 127px
+	list-style-type: none
+	background: url(#{$img}/bg_menu.png) no-repeat center top
+	width: 199px
+	height: 189px
+	li
+		text-align: center
+		margin-bottom: 18px
+		a
+			padding: 0 20px
+			display: block
+			font-size: 16px
+			font-weight: bold
+			line-height: 14px
+			text-transform: uppercase
+			color: black
+			@include single-text-shadow
+		a:hover
+			color: #ec068d
+	li.active
+		a
+			color: #ec068d
+
+.w160
+	width: 160px
+
+.container.footer
+	background: url(#{$img}/bg_footer.png) no-repeat center bottom
+	height: 40px
+	line-height: 40px
+	color: white
+	z-index: 105
+	a
+		color: white
+		img
+			margin: 0 2px
+	.add_fav
+		background: url(#{$img}/ico_fav.png) no-repeat right center
+		padding: 0 25px
+
+.names
+	height: 650px
+	a
+		line-height: 26px
+		font-size: 24px
+		color: #ffffff
+		margin-bottom: 20px
+		display: block
+		position: relative
+		z-index: 101
+		opacity: 0.5
+		height: 84px
+		img
+			border: 2px solid #000000
+			margin: 0 20px 0 0
+		span
+			font-size: 18px
+	a:hover,
+	a.active
+		color: #ec068d
+		opacity: 1
+		img
+			border: 2px solid #ec068d
+	a.initial
+		opacity: 1
+
+.reviewer
+	position: absolute
+	z-index: 101
+	width: 330px
+	height: 397px // 530px
+	padding: 100px 40px 0 330px
+	border: 2px solid #ec068d // border: 2px solid #ffe110
+	top: 315px
+	background: #000000
+	p
+		font-family: Calibri, Arial, sans-serif
+		font-size: 16px
+		line-height: 150%
+		padding-left: 15px
+	p.quoted
+		background: black url(#{$img}/lquote.png) no-repeat 0 7px
+		font-size: 18px
+		margin-bottom: 20px
+	h3
+		font-size: 30px
+		text-align: left
+		text-transform: none
+		margin: 0 0 30px
+		padding-left: 15px
+		span
+			font-size: 18px
+	.arrow
+		position: absolute
+		right: -23px
+		top: 30px
+		width: 23px
+		height: 13px
+
+.close_reviewer
+	position: absolute
+	right: 10px
+	top: 10px
+
+.bgImage
+	background: black
+	width: 100%
+	height: 100%
+	min-height: 1000px
+	position: absolute
+	overflow: hidden
+	top: 0
+	z-index: 0
+	text-align: center
+	img
+		position: absolute
+		z-index: 1
+		max-width: none
+		left: 50%
+		margin-left: -640px
+	img.active
+		z-index: 3
+
+.relative
+	position: relative
+
+.container
+	z-index: 5
