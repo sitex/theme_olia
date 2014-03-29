@@ -1,2 +1,2 @@
-theme_olia
+CakePHP Croogo Theme
 ==========
