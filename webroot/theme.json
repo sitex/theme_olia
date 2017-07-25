@@ -4,8 +4,6 @@
 	"screenshot" : "/screenshot.jpg",
 
 	"author" : "Sitex",
-	"authorEmail" : "gsitex@gmail.com",
-	"authorUrl" : "http://google.com",
 
 	"menus" : [
 		"main",
